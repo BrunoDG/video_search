@@ -16,7 +16,7 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-        this.handleSubmit('');
+        this.handleSubmit('Revision Demo Party');
     }
 
     onVideoSelect = (video) => {
@@ -31,12 +31,12 @@ class App extends React.Component {
                 key: 'AIzaSyB5bwOG7J4bkwcfvKwhxofCkvz26z7DGt8',            
                 q: searchTerm 
             }
-        });
+        })
         
         this.setState({ 
             videos: response.data.items, 
             selectedVideo: response.data.items[0] 
-        });
+        })
     }
 
     render() {
